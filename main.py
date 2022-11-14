@@ -73,7 +73,7 @@ def command_start(update, context: CallbackContext):
 
         keyboard = [[addme],[sohbet],[oyun],[admin]]
         reply_markup = InlineKeyboardMarkup(keyboard)
-        update.message.reply_text('👋 Salam, bu bot ilə qrupda vaxtınızı maraqlı keçirə bilərsiniz🥳', reply_to_message_id=True, reply_markup=reply_markup)
+        update.message.reply_text('🔮 Salam, bu bot ilə qrupda vaxtınızı maraqlı keçirə bilərsiniz🥳\n\n➤ Məlumat üçün 👉 /help üzərinə klikləyin əmrlər asan və sadədir👍', reply_to_message_id=True, reply_markup=reply_markup)
     else:
         chat_id = update.message.chat.id
         user_id = update.message.from_user.id
@@ -87,7 +87,7 @@ def command_start(update, context: CallbackContext):
         game = get_or_create_game(chat_id)
         game.start()
 
-        update.message.reply_text('Söz Oyunu Başladı✨'.format(username), reply_to_message_id=True)
+        update.message.reply_text('Söz Oyunu Başladı 🥳'.format(username), reply_to_message_id=True)
 
         set_master(update, context)
 
