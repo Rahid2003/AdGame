@@ -1,13 +1,13 @@
 {
 	"name": "Bot list",
-	"description": "@LordSahib Tərəfindən kodlanan bot list",
-	"repository": "https://github.com/KenanKodes/kenan.oku",
+	"description": "@Rahid_2003 tərəfindən kodlanan bot list",
+	"repository": "https://github.com/Rahid2003/AdGame",
 	"env": {
 		"BOT_TOKEN": {
-			"description": "@BotFather dan alınan Bot Token girin."
+			"description": "@BotFather-dan alınan Bot-Token girin."
                    },
 		"SUDO_USERS": {
-			"description": "Sahib ID Lərini Qoy"
+			"description": "Sahib ID-lərini qoy"
                    }
 	},
 	"buildpacks": [
